@@ -19,10 +19,7 @@ body{
     text-align: center;
     position: relative;
 }
-.title{
-    position: absolute;
-    top: 3rem;
-}
+
 
 input{
     cursor: pointer;
