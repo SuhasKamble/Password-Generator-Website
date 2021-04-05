@@ -71,7 +71,7 @@ function generateChars(){
     }
 
     if(numberEle.checked){
-        chars.push(getNumber);
+        chars.push(getNumber());
     }
     if(symbolEle.checked){
         chars.push(getSymbol());
