@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="title">
+        <h2>Password Generator</h2>
+        <p>By Suhas</p>
+    </div>
+    <div class="pwd-container">
+        <div class="pwd-top">
+            <input type="text" id="pwd" disabled>
+            <i class="far fa-clipboard" id="copy"></i>
+        </div>
+        <div class="pwd-bottom">
+            <div class="form-control">
+                <label for="len">Password Length</label>
+                <input type="number" id="len" min="2" max="30" value="2"> 
+            </div>
+            <div class="form-control">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input type="checkbox" name="lower" id="lower">
+            </div>
+            <div class="form-control">
+                <label for="upper">Contain Uppercase Letter</label>
+                <input type="checkbox" name="upper" id="upper">
+            </div>
+
+            <div class="form-control">
+                <label for="number">Contain Numbers</label>
+                <input type="checkbox" name="number" id="number">
+            </div>
+            <div class="form-control">
+                <label for="symbol">Contain Symbols</label>
+                <input type="checkbox" name="symbol" id="symbol">
+            </div>
+            
+        </div>
+        <button class="btn" id="btn">Generate Password</button>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/7d678829bc.js" crossorigin="anonymous"></script>
+</body>
+</html>
